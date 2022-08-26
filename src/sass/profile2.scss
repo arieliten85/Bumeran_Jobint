@@ -1,0 +1,527 @@
+.tituloPerfil {
+  // border: red solid;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.profile-container {
+ // border: red solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 450px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 50px;
+
+  border-radius: 10px;
+  overflow: hidden;
+  //info contacto
+ // box-shadow: rgb(124, 124, 124) 0px 2px 5px 0px;
+  .boxPerfil {
+    // border: rgb(19, 16, 16) solid;
+border: rgba(128, 128, 128, 0.76) solid 1px;
+    
+
+    .boxInfo {
+      // border: green solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+
+      .boxImg {
+        img {
+          // border: green solid;
+        }
+      }
+
+      .boxData {
+        //border: black solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 50%;
+
+        .items {
+          // border: red solid;
+          display: flex;
+          gap: 10px;
+          width: 100%;
+
+          .titulo {
+            width: 100%;
+            margin: 0;
+            color: black;
+            font-weight: 900px;
+          }
+
+          .atributo {
+            //border: red solid;
+            width: 100%;
+          }
+        }
+      }
+
+      .boxName {
+        //border: red solid;
+      }
+
+      .boxEditRating {
+        //border: red solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        .iconoEdit {
+          font-size: 20px;
+        }
+
+        .boxRating {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          .icono {
+            color: rgb(235, 204, 69);
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  //info grill
+
+  .boxDescrpcion {
+    //border: rgb(4, 0, 255) solid;
+    box-shadow: rgb(124, 124, 124) 0px 2px 5px 0px;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    z-index: 1;
+    background-image: url("../assets/fomrs/descarga3.png");
+    background-color: rgba(150, 187, 214, 0.77);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .profile-description {
+      padding: 10px;
+      color: w;
+      font-weight: 500;
+      z-index: 2;
+    }
+  }
+
+
+  .solapa {
+    background: #000cf1;
+
+    .active {
+      background: #aac7dd;
+      border: none;
+
+      p {
+        color: rgb(66, 64, 64);
+        font-weight: 900;
+      }
+    }
+
+    .nav-link {
+      color: #e6e8eb !important;
+    }
+  }
+
+  .searchTable-body {
+    border: none;
+    background: #032e4e3d;
+  }
+
+  .check-btn {
+    background: none;
+    border: none;
+    background: green;
+    color: #d7e9d7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    border-radius: 50px;
+
+    margin-left: 20px;
+  }
+
+  td{
+    
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 810px) {
+  .profile-container {
+    // border: red solid;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 450px;
+    width: 95%;
+    margin: 0 auto;
+
+    //info contacto
+
+    .boxPerfil {
+      //border: rgb(0, 47, 255) solid;
+      .boxInfo {
+        //border: green solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+        width: 250px;
+
+        .boxImg {
+          img {
+            // border: green solid;
+          }
+        }
+
+        .boxData {
+          // border: black solid;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          height: 50%;
+
+          .items {
+            //border: red solid;
+            display: flex;
+            gap: 10px;
+            width: 100%;
+
+            .titulo {
+              width: 100%;
+              margin: 0;
+              border-bottom: solid black 1px;
+            }
+          }
+        }
+
+        .boxName {
+          // border: red solid;
+        }
+
+        .boxEditRating {
+          // border: red solid;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+
+          .iconoEdit {
+            font-size: 20px;
+          }
+
+          .boxRating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .icono {
+              color: rgb(235, 204, 69);
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    //info grill
+
+    .boxDescrpcion {
+      // border: rgb(4, 0, 255) solid;
+
+      position: relative;
+      width: 100%;
+      min-height: 400px;
+
+      background-image: url("../assets/fomrs/descarga3.png");
+      background-repeat: no-repeat;
+      background-position: bottom;
+
+      .solapa {
+        background: #000cf1;
+
+        .active {
+          background: #aac7dd;
+          border: none;
+
+          p {
+            color: rgb(66, 64, 64);
+            font-weight: 900;
+          }
+        }
+
+        .nav-link {
+          color: #e6e8eb !important;
+        }
+      }
+
+      .searchTable-body {
+        border: none;
+        background: #032e4e3d;
+      }
+
+      .check-btn {
+        background: none;
+        border: none;
+        background: green;
+        color: #d7e9d7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+
+        border-radius: 50px;
+
+        margin-left: 20px;
+      }
+
+      td{
+        
+        font-weight: 900;
+      }
+    }
+
+    .boxBusquedasVacias {
+      //  border: red solid;
+      width: 100%;
+      //  height: 400px;
+
+      display: flex;
+
+      justify-content: center;
+
+      h2 {
+        font-weight: 900;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .profile-container {
+    width: 80%;
+  }
+
+  .profile-container .boxPerfil .boxInfo {
+    width: 300px;
+  }
+}
+
+// .profile-container {
+//   //border: 1px black solid;
+//   padding: 20px;
+//   display: flex;
+//   flex-flow: row wrap;
+//   width: 80%;
+//   margin: 0 auto;
+// }
+
+// .userInfo-card {
+//   margin-right: 2%;
+//   width: 20rem;
+//   max-height: 23rem;
+//   box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.15);
+//   border-radius: 3%;
+//   //border: rgb(17, 57, 255) solid;
+// }
+
+// .userInfo-tag {
+//   font-weight: bolder;
+//   //border: rgb(17, 57, 255) solid;
+// }
+
+// .userInfo-content {
+//   text-align: right;
+//   //border: rgb(17, 255, 45) solid;
+// }
+
+// .profile-photo-container {
+//   //border: red solid;
+//   position: relative;
+//   text-align: center;
+//   font-weight: bolder;
+//   color: #000df1;
+// }
+
+// .profile-photo {
+//   width: 40%;
+// }
+
+// .profile-edit {
+//   color: black;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+// }
+
+// .profile-infoContainer {
+//   margin-top: 3%;
+//   //border: black solid;
+// }
+
+// .profile-info {
+//   display: flex;
+//   justify-content: space-between;
+//   //border: red solid;
+// }
+
+// .searchInfo-card {
+//   //border: black solid;
+//   overflow: hidden;
+//   display: flex;
+//   width: 45rem;
+//   box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.15);
+//   border-radius: 2%;
+// }
+
+// .active-search-card {
+//   display: flex;
+//   flex-direction: row;
+//   margin-bottom: 0.5%;
+//   border-radius: 1vmax;
+//   box-sizing: border-box;
+//   width: 100%;
+//   overflow: hidden;
+//   border: solid 1px rgb(0, 0, 0, 0.2);
+//   box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.15);
+//   span {
+//     font-size: larger;
+//     font-weight: 500;
+//   }
+// }
+
+// .left-content {
+//   width: 35rem;
+// }
+
+// .right-content {
+//   align-self: center;
+// }
+
+// .card-logo {
+//   width: 5rem;
+//   padding: 2%;
+// }
+
+// .botn {
+//   width: 7rem;
+//   background: #eb0064;
+//   border: none;
+//   font-weight: bolder;
+//   color: white;
+//   padding: 10px;
+//   border-radius: 1rem;
+// }
+
+// .botn:hover {
+//   box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
+// }
+
+// .background {
+//   position: relative;
+//   width: 40rem;
+//   height: 40rem;
+//   background-image: url("../assets/fomrs/descarga3.png");
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+
+// .nav-link {
+//   color: #666666;
+// }
+
+// #nav-home-tab:focus {
+//   color: #eb0064;
+//   background-color: white;
+// }
+// #nav-profile-tab:focus {
+//   color: #eb0064;
+//   background-color: white;
+// }
+// .profile-table {
+//   border-radius: 16px;
+//   overflow: hidden;
+// }
+// .searchTable-head {
+//   background-color: #eb0064;
+//   color: white;
+
+//   th {
+//     text-align: center;
+//   }
+// }
+// .searchTable-body {
+//   height: 100px;
+//   th {
+//     padding: 5%;
+//   }
+
+//   td {
+//     text-align: center;
+//     align-items: center;
+//   }
+// }
+
+// .check-btn {
+//   color: #ffffff;
+//   background-color: #7070708d;
+// }
+
+// .check-btn:focus {
+//   color: #ffffff;
+//   background-color: #eb0064;
+// }
+
+// .profile-description {
+//   margin: 2%;
+// }
+// @media screen and (max-width: 1376px) {
+//   .profile-container {
+//     //border: 1px black solid;
+//     padding: 20px;
+//     display: flex;
+//     flex-flow: row wrap;
+//     width: 100%;
+//     margin: 0 auto;
+//   }
+
+//   .userInfo-card {
+//     margin-right: 0;
+//     margin-bottom: 1%;
+//     width: 100%;
+//     border-radius: 1%;
+//     //border: rgb(17, 57, 255) solid;
+//   }
+
+//   .profile-photo {
+//     width: 10%;
+//   }
+
+//   .searchInfo-card {
+//     //border: black solid;
+//     width: 100%;
+//     border-radius: 1%;
+//     //margin-bottom: 500px;
+//   }
+// }

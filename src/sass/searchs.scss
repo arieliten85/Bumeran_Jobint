@@ -1,0 +1,1455 @@
+////////////// barra busqueda /////////////////
+.titulo {
+  text-align: left;
+  margin-left: 7%;
+  margin-top: 2.5%;
+  color: #000cf1;
+}
+.status {
+  background: #eb0064;
+
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+
+  width: 30%;
+  height: 20px;
+
+  text-align: center;
+  color: wheat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.btnDelete {
+  cursor: pointer;
+  background-color: #000cf1;
+  color: white;
+  width: 36px;
+  height: 36px;
+  padding: 9px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.btn-search {
+  background-color: #000cf1;
+  color: white;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  margin: 0 auto;
+
+  .icono {
+    .btnDelete {
+      cursor: pointer;
+
+      border: none;
+      font-size: 20px;
+    }
+    font-size: 20px;
+  }
+
+  &:hover {
+    color: rgb(206, 199, 199);
+  }
+}
+
+.card-search {
+  background: #d8dcfc;
+  bleed: normal;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+.create {
+  display: none;
+}
+.create2 {
+  display: block;
+}
+.boxBusqueda {
+  display: flex !important;
+  flex-direction: column;
+  width: 90%;
+  select {
+    cursor: pointer;
+    background-color: #ffffff !important;
+    border-radius: 0.5rem;
+    padding-left: 8px;
+    color: #1d1c1c;
+    font-weight: 200;
+    width: 100%;
+    margin: 5px;
+  }
+}
+
+.buttonAsignar {
+  background:  #E90066;
+  border: none;
+  color: rgb(252, 250, 250);
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+}
+.buttonAsignar:hover {
+  color: rgb(255, 255, 255);
+  background: #fc3f91;
+}
+
+
+
+
+@media screen and (min-width: 810px) {
+  .card-search {
+    flex-direction: row;
+  }
+  .create {
+    display: block;
+  }
+  .create2 {
+    display: none;
+  }
+  .btn-search {
+    margin: 9px;
+  }
+  .boxBusqueda {
+    flex-direction: row;
+    justify-content: space-between !important;
+    width: 90%;
+    select {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card-search {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .boxBusqueda {
+    flex-direction: row;
+    justify-content: space-evenly !important;
+    width: 80%;
+  }
+}
+
+////////////// final barra busqueda /////////////////
+
+////////////// LISTA BUSQUEDA /////////////////
+.local {
+  color: #eb002bee;
+  width: 21px;
+}
+
+.boxLocation {
+  position: relative;
+}
+
+.popUpLocation {
+  position: absolute;
+  width: 93px;
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  border: rgba(0, 0, 0, 0.432) solid 1px;
+  border-radius: 5px;
+  padding-left: 23px;
+  p {
+    // border: black solid 1px;
+    //width: 60%;
+    height: 24px;
+    text-align: center !important;
+    background: #eb0064;
+    color: white !important;
+    font-size: 15px !important;
+  }
+}
+
+.popUpRating {
+  position: absolute;
+  width: 93px;
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  border: rgba(0, 0, 0, 0.432) solid 1px;
+  border-radius: 5px;
+  padding-left: 23px;
+
+  p {
+    // border: black solid 1px;
+    //width: 70%;
+    background: rgba(199, 181, 82, 0.562);
+    height: 24px;
+    text-align: center !important;
+    background: #eb0064;
+    color: white !important;
+    font-size: 15px !important;
+  }
+}
+
+.popUpCandidatos {
+  position: absolute;
+  width: 120px;
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  border: rgba(0, 0, 0, 0.432) solid 1px;
+  border-radius: 5px;
+  padding-left: 25px;
+
+  p {
+    // border: black solid 1px;
+    width: 100%;
+    background: rgba(199, 181, 82, 0.562);
+    height: 24px;
+    text-align: center !important;
+    background: #eb0064;
+    color: white !important;
+    font-size: 15px !important;
+  }
+}
+
+
+.popUpReclutador {
+  position: absolute;
+  width: 121px;
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  border: rgba(0, 0, 0, 0.432) solid 1px;
+  border-radius: 5px;
+  padding-left: 25px;
+
+  p {
+    width: 100%;
+    background: rgba(199, 181, 82, 0.562);
+    height: 24px;
+    text-align: center !important;
+    background: #eb0064;
+    color: white !important;
+    font-size: 15px !important;
+  }
+}
+
+.popUpCandidatos:hover {
+  opacity: 1;
+}
+
+.popUpLocation:hover {
+  opacity: 1;
+}
+.popUpRating:hover {
+  opacity: 1;
+}
+.popUpReclutador:hover {
+  opacity: 1;
+}
+
+.ContainerSearch {
+  .flex {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card {
+    display: flex !important;
+    flex-direction: column;
+
+    margin-bottom: 50px;
+    padding: 15px;
+    border: rgba(137, 138, 139, 0.3) solid 1px !important;
+    padding: 0px;
+
+    -webkit-box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+
+    .boxTime {
+      display: flex;
+      justify-content: end;
+      border-bottom: solid #948b8b 1px;
+      margin: 0 auto;
+      width: 95%;
+
+      small {
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 10px;
+        letter-spacing: 0.5px;
+        color: #948b8b;
+        font-size: 1.1vmax;
+      }
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    h5 {
+      text-align: left;
+      font-size: 2.4vmax;
+      color: #fba200;
+    }
+
+    .area {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+      margin: 0;
+      font-size: 15px;
+      font-weight: 800;
+      padding-bottom: 5px;
+      color: #7b788b;
+      text-transform: uppercase;
+
+      font-size: 12px;
+    }
+    p {
+      text-align: left;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+
+      strong {
+        color: rgb(156, 152, 152);
+      }
+    }
+
+    // .card-texto2{
+    //   font-family: sans-serif;
+    //   font-weight: 500;
+    // }
+
+    .card-img {
+      width: 20%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .infoCard {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      gap: 7px;
+      padding: 15px;
+      // background: rgba(87, 85, 85, 0.027);
+
+      span {
+        margin: 0 auto;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+        background: #eb0064;
+      }
+
+      .boxLocation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        border-bottom: rgba(150, 147, 147, 0.678) solid 1px;
+
+        p {
+          margin: 0;
+          font-size: 1.3vmax;
+          font-weight: 400;
+          color: #33323a;
+        }
+      }
+    }
+
+    .bumeran-container {
+      display: flex;
+      margin: 10px;
+      background: rgb(0, 12, 241);
+
+      img {
+        width: 120px;
+        padding: 8px;
+        padding-left: 8px;
+        padding-left: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .status {
+    width: 15%;
+    height: 20px;
+  }
+
+  .ContainerSearch {
+    .flex {
+      display: flex !important;
+    }
+
+    .card {
+      flex-direction: column;
+
+      .box {
+        //display: flex;
+        flex-direction: row;
+      }
+
+      .infoCard {
+        // border: rgb(0, 255, 128) solid;
+        width: 40% !important;
+        flex-direction: column;
+        align-content: space-between;
+
+        .badge {
+          margin: 0 auto;
+          letter-spacing: 0.5px;
+        }
+
+        .boxLocation {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: start;
+          gap: 10px;
+          border-bottom: rgba(150, 147, 147, 0.678) solid 1px;
+
+          p {
+            margin: 0;
+            font-size: 1.3vmax;
+          }
+        }
+      }
+
+      h5 {
+        text-align: left;
+        font-size: 1.8vmax;
+        color: #fba200;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ContainerSearch {
+    .flex {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      display: flex !important;
+      flex-direction: column;
+      width: 80%;
+
+      margin: 30px auto;
+
+      .infoCard {
+        // border: rgb(0, 255, 128) solid;
+        width: 40% !important;
+        flex-direction: column;
+        align-content: space-between;
+
+        .badge {
+          margin: 0 auto;
+          letter-spacing: 0.5px;
+        }
+
+        .boxLocation {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: start;
+          gap: 10px;
+          border-bottom: rgba(150, 147, 147, 0.678) solid 1px;
+
+          p {
+            margin: 0;
+            font-size: 1.2vmax;
+          }
+        }
+      }
+
+      .card-img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+      }
+
+      // .time-container {
+      //   display: flex;
+      //   justify-content: flex-end;
+      //   align-items: center;
+
+      //   background: rgba(49, 49, 49, 0.274);
+      // }
+    }
+
+    .status {
+      width: 12%;
+    }
+  }
+}
+
+////////////// FINAL LISTA BUSQUEDA /////////////////
+
+.containerBox {
+  .boxTitle {
+    border-radius: 5px;
+    box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 20px;
+    padding: 13px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      h1 {
+        color: #fba200;
+        font-size: 25px;
+      }
+      h3 {
+        display: inline;
+        font-size: 15px;
+      }
+    }
+
+    .boxEditDelet {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      gap: 20px;
+
+      //width: 200px;
+
+      .BtnEdit {
+        cursor: pointer;
+
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 5px;
+
+        font-size: 30px;
+      }
+      .BtnDelete {
+        cursor: pointer;
+
+        width: 35px;
+        height: 35px;
+        padding: 6px;
+
+        border-radius: 5px;
+
+        font-size: 30px;
+      }
+    }
+  }
+
+  .boxInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+
+    border-radius: 5px;
+    box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+    background: white;
+
+    margin: 20px;
+    padding: 15px;
+
+    .grup01,
+    .grup02 {
+      width: 30%;
+
+      .boxicon {
+        font-size: 25px;
+
+        display: flex;
+        padding: 5px;
+        width: 200px;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          font-size: 18px;
+          max-width: max-content;
+          margin: 0;
+          color: rgb(85, 83, 83);
+        }
+
+        span {
+          color: rgb(85, 83, 83);
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .boxText {
+    width: 90%;
+    // min-height: 400px;
+
+    border-radius: 5px;
+    box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+    background: white;
+
+    margin: 20px;
+    padding: 15px;
+
+    padding-left: 15px;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .boxTree {
+    display: flex;
+    flex-direction: column;
+
+    .boxMoreSerach {
+      display: flex;
+      flex-direction: column;
+
+      color: #ca0707;
+
+      border-radius: 5px;
+      box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+      background: white;
+      width: 90%;
+      margin: 0 auto;
+
+      padding: 10px;
+
+      .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+
+        img {
+          width: 35px;
+        }
+
+        .boxData {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          .boxPerson {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
+
+            gap: 5px;
+
+            h1 {
+              font-size: 20px;
+              margin: 0;
+              font-size: 1.5vmax;
+            }
+          }
+
+          .boxCountry {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
+            h1 {
+              font-size: 20px;
+              margin: 0;
+              font-size: 1.5vmax;
+            }
+          }
+        }
+
+        .itemRating {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          width: 20%;
+
+          .numero {
+            color: black;
+            margin: 0;
+            padding-right: 5px;
+            font-size: 1.5vmax;
+          }
+
+          .estella {
+            color: rgb(224, 198, 58);
+            font-size: 20px;
+          }
+        }
+      }
+
+      .boxNotificacion {
+        // border: red solid;
+        text-align: center;
+        background: rgba(128, 128, 128, 0.192);
+        border: grey solid;
+        border-radius: 10px;
+        height: 100%;
+
+        img {
+          // border: red solid;
+        }
+        h2 {
+          color: #0a26ee;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          width: 246px;
+          height: 64px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .containerBox {
+    padding-top: 40px;
+    width: 95%;
+    margin: 0 auto;
+
+    .boxTitle {
+      border-radius: 5px;
+      box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+      background: white;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      margin: 20px;
+      padding: 13px;
+      padding-left: 13px;
+      padding-left: 40px;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h1 {
+          font-size: 30px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+      }
+
+      .boxEditDelet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+        padding-right: 20px;
+
+        // width: 200px;
+
+        .BtnEdit {
+          cursor: pointer;
+
+          width: 35px;
+          height: 35px;
+          padding: 5px;
+          border-radius: 5px;
+
+          font-size: 30px;
+        }
+        .BtnDelete {
+          cursor: pointer;
+
+          width: 35px;
+          height: 35px;
+          padding: 6px;
+
+          border-radius: 5px;
+
+          font-size: 30px;
+        }
+      }
+    }
+
+    .contenedorInfo {
+      .boxInfo {
+        display: flex;
+        flex-direction: row;
+
+        border-radius: 5px;
+        box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+        background: white;
+        width: 95%;
+        margin: 20px;
+        padding: 15px;
+
+        padding-left: 35px;
+
+        .grup01,
+        .grup02 {
+          width: 30%;
+
+          .boxicon {
+            font-size: 19px;
+
+            display: flex;
+            padding: 5px;
+
+            align-items: center;
+            gap: 10px;
+
+            p {
+              font-size: 18px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .boxText {
+      // min-height: 400px;
+
+      border-radius: 5px;
+      box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+      background: white;
+
+      margin: 20px;
+      padding: 15px;
+      width: 95%;
+      padding-left: 35px;
+
+      p {
+        text-align: left;
+      }
+    }
+
+    .boxTree {
+      display: flex;
+      flex-direction: column;
+
+      .boxMoreSerach {
+        display: flex;
+        flex-direction: column;
+
+        color: #ca0707;
+
+        border-radius: 5px;
+        box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+        background: white;
+        width: 95%;
+        margin: 20px;
+        padding: 10px;
+
+        .card {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+
+          box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+
+          padding: 10px;
+          margin: 10px;
+          border-radius: 5px;
+
+          img {
+            width: 50px;
+          }
+
+          .boxData {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .boxPerson {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              width: 100%;
+
+              gap: 10px;
+
+              h1 {
+                font-size: 20px;
+                margin: 0;
+                font-size: 1.5vmax;
+              }
+            }
+
+            .boxCountry {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              width: 100%;
+              h1 {
+                font-size: 20px;
+                margin: 0;
+                font-size: 1.5vmax;
+              }
+            }
+          }
+
+          .itemRating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width: 20%;
+
+            .numero {
+              color: black;
+              margin: 0;
+              padding-right: 5px;
+              font-size: 1.5vmax;
+            }
+
+            .estella {
+              color: rgb(224, 198, 58);
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    h1 {
+      color: black;
+    }
+  }
+
+  ///HOVERS ICONS//
+
+  .boxLocation {
+    //border: red solid;
+    position: relative;
+  }
+
+  .popUpLocation {
+    position: absolute;
+    width: 100%;
+
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: rgba(0, 0, 0, 0.432) solid 1px;
+    border-radius: 5px;
+    color: wheat;
+
+    p {
+      // border: black solid 1px;
+      // width: 60%;
+      height: 28px;
+      text-align: center !important;
+      background: #eb0064;
+      color: white !important;
+      font-size: 15px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .popUpRating {
+    position: absolute;
+    width: 100%;
+
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: rgba(0, 0, 0, 0.432) solid 1px;
+    border-radius: 5px;
+    color: wheat;
+
+    p {
+      // border: black solid 1px;
+      height: 28px;
+      text-align: center !important;
+      background: #eb0064;
+      color: white !important;
+      font-size: 15px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .popUpCandidatos {
+    position: absolute;
+    width: 100%;
+
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: rgba(0, 0, 0, 0.432) solid 1px;
+    border-radius: 5px;
+    color: wheat;
+    p {
+      height: 28px;
+      text-align: center !important;
+      background: #eb0064;
+      color: white !important;
+      font-size: 15px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px !important;
+    }
+  }
+
+  .popUpReclutador {
+    position: absolute;
+    width: 100%;
+
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: rgba(0, 0, 0, 0.432) solid 1px;
+    border-radius: 5px;
+    color: wheat;
+
+    p {
+      // border: black solid 1px;
+      height: 28px;
+      text-align: center !important;
+      background: #eb0064;
+      color: white !important;
+      font-size: 15px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .popUpCandidatos:hover {
+    opacity: 1;
+  }
+
+  .popUpLocation:hover {
+    opacity: 1;
+  }
+  .popUpRating:hover {
+    opacity: 1;
+  }
+  .popUpReclutador:hover {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .containerBox {
+    width: 70%;
+    //border: red solid;
+
+    .boxTitle {
+      border-radius: 5px;
+      box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+      background: white;
+
+      display: flex;
+      justify-content: space-between;
+
+      margin: 20px;
+      padding: 13px;
+      padding-left: 13px;
+      padding-left: 40px;
+      width: 98%;
+      div {
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+        h1 {
+          font-size: 30px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+      }
+
+      .boxEditDelet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+
+        //width: 200px;
+
+        .BtnEdit {
+          cursor: pointer;
+
+          width: 35px;
+          height: 35px;
+          padding: 5px;
+          border-radius: 5px;
+
+          font-size: 30px;
+        }
+        .BtnDelete {
+          cursor: pointer;
+
+          width: 35px;
+          height: 35px;
+          padding: 6px;
+
+          border-radius: 5px;
+
+          font-size: 30px;
+        }
+      }
+    }
+
+    .contenedorInfo {
+      // border: red solid;
+      width: 60%;
+
+      .boxInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+
+        //border: red solid;
+
+        border-radius: 5px;
+        box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+        background: white;
+        width: 95%;
+        margin: 20px;
+        margin-top: 0;
+        padding: 10px;
+
+        //padding-left: 35px;
+
+        .grup01,
+        .grup02 {
+          width: 30%;
+
+          .boxicon {
+            //border: red solid;
+            width: max-content;
+            font-size: 19px;
+
+            display: flex;
+            padding: 5px;
+
+            align-items: center;
+            gap: px;
+
+            p {
+              font-size: 18px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .boxText {
+      // border: rgb(25, 0, 255) solid;
+
+      min-height: 400px;
+
+      border-radius: 5px;
+      box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+      background: white;
+
+      margin: 20px;
+      padding: 15px;
+      width: 95%;
+      //padding-left: 35px;
+
+      p {
+        text-align: left;
+        letter-spacing: 0.8px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    }
+
+    .boxTree {
+      //border: rgb(0, 255, 98) solid;
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+
+      .boxMoreSerach {
+        // border: rgb(26, 25, 25) solid;
+
+        display: flex;
+        flex-direction: column;
+
+        color: #ca0707;
+
+        border-radius: 5px;
+        box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+        background: white;
+        width: 40%;
+        margin: 0px;
+        margin-bottom: 20px;
+        padding: 10px;
+
+        .card {
+          //border: rgba(145, 133, 133, 0.575) solid;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+
+          box-shadow: 0px 6px 17px -6px rgba(0, 0, 0, 0.75);
+
+          padding: 10px;
+          margin: 10px;
+          border-radius: 5px;
+
+          img {
+            width: 50px;
+          }
+
+          .boxData {
+            // border: rgb(31, 13, 13) solid;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .boxPerson {
+              // border: red solid;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              width: 100%;
+
+              gap: 10px;
+
+              h1 {
+                font-size: 20px;
+                margin: 0;
+                font-size: 1.1vmax;
+              }
+            }
+
+            .boxCountry {
+              // border: red solid;
+
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              width: 100%;
+              h1 {
+                color: rgb(117, 114, 114);
+                font-size: 20px;
+                margin: 0;
+                font-size: 1.1vmax;
+              }
+            }
+          }
+
+          .itemRating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width: 20%;
+
+            .numero {
+              color: black;
+              margin: 0;
+              padding-right: 5px;
+              font-size: 1.3vmax;
+            }
+
+            .estella {
+              color: rgb(224, 198, 58);
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    h1 {
+      color: black;
+    }
+  }
+  ///HOVERS ICONS//
+
+  .boxLocation {
+    //border: red solid;
+    position: relative;
+  }
+
+  .popUpLocation {
+    position: absolute;
+    width: 100%;
+
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: rgba(0, 0, 0, 0.432) solid 1px;
+    border-radius: 5px;
+    color: wheat;
+
+    p {
+      // border: black solid 1px;
+      // width: 60%;
+      height: 28px;
+      text-align: center !important;
+      background: #eb0064;
+      color: white !important;
+      font-size: 15px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .popUpRating {
+    position: absolute;
+    width: 100%;
+
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: rgba(0, 0, 0, 0.432) solid 1px;
+    border-radius: 5px;
+    color: wheat;
+
+    p {
+      // border: black solid 1px;
+      height: 28px;
+      text-align: center !important;
+      background: #eb0064;
+      color: white !important;
+      font-size: 15px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .popUpCandidatos {
+    position: absolute;
+    width: 100%;
+
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: rgba(0, 0, 0, 0.432) solid 1px;
+    border-radius: 5px;
+    color: wheat;
+    p {
+      height: 28px;
+      text-align: center !important;
+      background: #eb0064;
+      color: white !important;
+      font-size: 15px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px !important;
+    }
+  }
+
+  .popUpReclutador {
+    position: absolute;
+    width: 100%;
+
+    border-radius: 2px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border: rgba(0, 0, 0, 0.432) solid 1px;
+    border-radius: 5px;
+    color: wheat;
+
+    p {
+      // border: black solid 1px;
+      height: 28px;
+      text-align: center !important;
+      background: #eb0064;
+      color: white !important;
+      font-size: 15px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .popUpCandidatos:hover {
+    opacity: 1;
+  }
+
+  .popUpLocation:hover {
+    opacity: 1;
+  }
+  .popUpRating:hover {
+    opacity: 1;
+  }
+  .popUpReclutador:hover {
+    opacity: 1;
+  }
+}
+
+////////////// FINAL INDIVIDUAL BUSQUEDA /////////////////

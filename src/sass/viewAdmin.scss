@@ -1,0 +1,174 @@
+//Hacer media query para los filtros
+.boxReclutador{
+  width: 77%;
+  margin: 0 auto;
+}
+
+
+.card-busqueda {
+ 
+  background-color: #d8dcfc;
+  height: 62px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  /* border: solid red; */
+
+  .form-select {
+    color: #29293d;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+   /*  border: solid red */
+  }
+
+  .form-select:focus {
+    color: #000cf1;
+    border-color: #000cf1;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+  }
+
+  option {
+    color: rgba(0, 0, 0, 0.589);
+    font-weight: bold;
+  }
+
+  //barra de busqueda
+  .form-admin {
+    background-color: #ffffff !important;
+    border-radius: 0.5rem;
+    /* border: solid red; */
+  }
+
+  .form-admin:focus {
+    color: #000cf1;
+    border-color: #000cf1;
+    outline: 0;
+    box-shadow: none;
+    background-color: #FFFFFF;
+  }
+
+  //Boton de borrar y boton de descargas
+  .borrar {
+    background-color: #000cf1;
+    width: 36px;
+    height: 36px;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    color: #FFFFFF;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .container-busqueda {
+    flex-direction: row;
+    justify-content: space-between !important;
+    width: 90%;
+  }
+
+}
+
+
+//Media query para los titulos
+.container-titulos {
+  width: 88%;
+  margin: 0 auto;
+  background-color: #eb0064;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+
+  .card-titulos {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+    h5 {
+      color: #FFFFFF;
+      //border: grey solid;
+      font-size: 14px;
+    
+      margin: 0;
+
+    }
+
+    .permisos {
+      color: #FFFFFF;
+    }
+  }
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .container-titulos {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .card-busqueda {
+    background-color: #d8dcfc;
+    height: 62px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    /* border: solid red; */
+  
+    .form-select {
+      color: #29293d;
+      background-color: #FFFFFF;
+      border-radius: 0.5rem;
+     /*  border: solid red */
+    }
+  
+    .form-select:focus {
+      color: #000cf1;
+      border-color: #000cf1;
+      outline: 0;
+      box-shadow: none;
+      border-radius: 0.5rem;
+      background-color: #FFFFFF;
+    }
+  
+    option {
+      color: rgba(0, 0, 0, 0.589);
+      font-weight: bold;
+    }
+  
+    //barra de busqueda
+    .form-admin {
+      background-color: #ffffff !important;
+      border-radius: 0.5rem;
+      /* border: solid red; */
+    }
+  
+    .form-admin:focus {
+      color: #000cf1;
+      border-color: #000cf1;
+      outline: 0;
+      box-shadow: none;
+      background-color: #FFFFFF;
+    }
+  
+    //Boton de borrar y boton de descargas
+    .borrar {
+      background-color: #000cf1;
+      width: 36px;
+      height: 36px;
+      padding: 9px;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      color: #FFFFFF;
+    }
+  
+  }
+}

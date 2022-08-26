@@ -1,0 +1,77 @@
+.form {
+  padding: 4%;
+  position: relative;
+  width: 50%;
+  height: 40%;
+  left: 25%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+}
+
+.form-login {
+  padding: 4%;
+  position: relative;
+  width: 50%;
+  height: 40%;
+  left: 25%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+}
+
+.title-login {
+  text-align: center;
+  margin-right: 3%;
+  margin-top: 4%;
+  color: #eb0064;
+  font-weight: 400;
+}
+
+.btn-form {
+  width: 50%;
+  margin-left: 25%;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  background-color: #eb0064;
+  border-color: none;
+  margin-top: 2%;
+  border-radius: 0.5rem;
+}
+
+
+
+.title-register-login {
+  margin-top: 2%;
+  margin-bottom: 6%;
+  text-align: center;
+  color: #eb0064;
+  font-weight: 400;
+}
+
+
+.detalles {
+  color: #eb0064;
+}
+
+.obligatorio {
+  color: #ee3b3b;
+  font-weight: lighter;
+}
+
+.prueba {
+  background-image: url(../assets/contenido/descarga4.png);
+  background-repeat: no-repeat;
+  background-position: -65%;
+}
+
+.prueba-1 {
+  background-image: url(../assets/contenido/descarga.png);
+  background-repeat: no-repeat;
+  background-position: -65%;
+}

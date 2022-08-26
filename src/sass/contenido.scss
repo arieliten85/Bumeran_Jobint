@@ -1,0 +1,531 @@
+.contenido {
+  width: auto;
+  height: auto;
+}
+
+.card-contenido h2,
+p,
+h3 {
+  text-align: center;
+  font-family: "Hind Vadodara", sans-serif;
+}
+
+.home2 {
+  text-align: center;
+  .candidatos {
+    width: 17vmax;
+    margin: 0 auto;
+  }
+}
+
+.home {
+  height: auto;
+  margin-right: 6rem;
+}
+
+.iconos {
+  color: #fe0068;
+}
+
+.col-sm-4 {
+  margin-top: 1.5%;
+}
+
+.col-sm-5 {
+  margin-top: 7%;
+}
+
+.col-sm-4 div {
+  margin-top: 3%;
+}
+
+li {
+  color: black;
+  font-weight: lighter;
+  font-size: normal;
+  margin-top: 6.5%;
+  margin-bottom: 4%;
+}
+
+.candidatos {
+  margin-left: 16%;
+}
+
+.boxQuienesSomos {
+  // border: rgb(0, 0, 0) solid;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 30px;
+  width: 100%;
+
+  margin-top: 50px;
+
+  .item_img_1 {
+    // border: red solid;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+}
+
+.boxContenedor {
+  // border: red solid;
+  padding: 20px;
+  background: rgb(255, 250, 250);
+}
+
+.contenido {
+  //border: rgb(126, 150, 21) solid 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home {
+  //border: black solid;
+  display: flex;
+
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.titulo_qs {
+  margin-top: 50px;
+}
+.boxQuienesSomos {
+  //border: rgb(0, 0, 0) solid;
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px;
+
+  margin: 0 auto;
+  margin-top: 30px;
+
+  .item_img_1 {
+    // border: rgb(24, 23, 23) solid;
+
+    .boxPaises {
+      //border: red solid;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 17px;
+      img {
+        width: 6%;
+      }
+    }
+  }
+
+  .boxCardInfo {
+    // border: red solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3,
+    p,
+    strong {
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 35px;
+      font-weight: 900;
+    }
+  }
+
+  .boxcard {
+    // border: rgb(109, 139, 106) solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+
+    strong {
+      // border: rgb(21, 255, 0) solid;
+      font-size: 12px;
+    }
+
+    .cardBg {
+      box-shadow: rgb(124, 124, 124) 0px 2px 5px 0px;
+      width: 90%;
+      height: 100px !important;
+      margin: 0 auto;
+      margin-top: 20px;
+      border-radius: 15px;
+      padding: 5px;
+
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center;
+      gap: 30px;
+
+      img {
+        width: 30%;
+      }
+
+      .infoText {
+        p {
+          font-size: 12px;
+          padding: 0;
+          margin: 0;
+          text-align: left;
+        }
+      }
+    }
+
+    .info {
+      // border: rgb(255, 30, 0) solid;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 30px;
+
+      img {
+        width: 50%;
+      }
+
+      .itemInfo {
+        // border: rgb(255, 30, 0) solid;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100px;
+
+        h6 {
+          text-align: center;
+          margin: 0;
+          // border: rgb(255, 30, 0) solid;
+          height: 50px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+.boxContenedor {
+  // border: red solid;
+  padding: 20px;
+}
+
+.contenido {
+  //border: rgb(126, 150, 21) solid 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home {
+  //border: black solid;
+  display: flex;
+
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+@media screen and (min-width: 810px) {
+  .contenido {
+    // border: rgb(126, 150, 21) solid 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home {
+    // border: rgb(158, 13, 13) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    .home2 {
+      // border: rgb(158, 13, 13) solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .titulo_qs {
+    margin-top: 50px;
+  }
+  .boxQuienesSomos {
+    // border: rgb(0, 0, 0) solid;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 50px;
+    width: 90%;
+
+    margin: 0 auto;
+    margin-top: 30px;
+
+    .item_img_1 {
+      // border: rgb(24, 23, 23) solid;
+      width: 50%;
+
+      .boxPaises {
+        // border: red solid;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+        img {
+          width: 6%;
+        }
+      }
+    }
+
+    .boxCardInfo {
+      //border: red solid;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3,
+      p,
+      strong {
+        text-align: left;
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 27px;
+      }
+    }
+
+    .boxcard {
+      //border: rgb(109, 139, 106) solid;
+      width: 85%;
+      // height:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 0 auto;
+
+      strong {
+        // border: rgb(21, 255, 0) solid;
+        font-size: 12px;
+      }
+
+      .cardBg {
+        // border: rgb(21, 255, 0) solid;
+        width: 100%;
+        height: 90px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 15px;
+        padding: 5px;
+
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        img {
+          width: 20%;
+        }
+
+        .infoText {
+          p {
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+
+      .info {
+        // border: rgb(255, 30, 0) solid;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        gap: 30px;
+
+        img {
+          width: 50%;
+        }
+
+        .itemInfo {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+
+          h6 {
+            text-align: center;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .boxContenedor {
+    // border: red solid;
+    padding: 20px;
+  }
+
+  .contenido {
+    //border: rgb(126, 150, 21) solid 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home {
+    //border: black solid;
+    display: flex;
+
+    justify-content: space-evenly;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .titulo_qs {
+    margin-top: 50px;
+  }
+  .boxQuienesSomos {
+    // border: rgb(0, 0, 0) solid;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 0;
+    width: 90%;
+
+    margin: 0 auto;
+    margin-top: 30px;
+
+    .item_img_1 {
+      //border: rgb(24, 23, 23) solid;
+      width: 50%;
+
+      .boxPaises {
+        // border: red solid;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+        img {
+          width: 6%;
+        }
+      }
+    }
+
+    .boxCardInfo {
+      //border: red solid;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3,
+      p,
+      strong {
+        text-align: left;
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 27px;
+      }
+    }
+
+    .boxcard {
+      // border: rgb(21, 255, 0) solid;
+      width: 80%;
+      // height:100%;
+      margin: 0 auto;
+
+      .cardBg {
+        //border: rgb(21, 255, 0) solid;
+        width: 80%;
+        height: 90px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 15px;
+        padding: 5px;
+
+        display: flex;
+
+        gap: 30px;
+
+        img {
+          width: 20%;
+        }
+
+        .infoText {
+          p {
+            font-size: 15px;
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+
+      .info {
+        //  border: rgb(255, 30, 0) solid;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        width: 100%;
+        height: 190px;
+        margin-top: 0;
+        gap: 0px;
+
+        img {
+          width: 70%;
+        }
+
+        .itemInfo {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: flex-end;
+          // margin-top: 20px;
+
+          h6 {
+            text-align: center;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .boxContenedor {
+    // border: red solid;
+    padding: 20px;
+  }
+
+  .contenido {
+    //border: rgb(126, 150, 21) solid 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home {
+    //border: black solid;
+    display: flex;
+
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  .home2 {
+    text-align: center;
+    .candidatos {
+      width: 12vmax;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,377 @@
+.btn-warning {
+  background: none;
+  color: rgb(255, 216, 99);
+}
+
+.btn-warning:hover {
+  color: white;
+}
+
+.container-parent{
+  margin-bottom: 10px !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.trash-btn {
+  background: none !important;
+  //border: solid #ef418d 1px;
+  color: #ef418d !important;
+  margin: 0 !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+.trash-btn:hover {
+  background: #ef418d !important;
+  color: white !important;
+}
+
+.boxReclutador {
+  width: 100%;
+  margin: 0 auto;
+
+  .container-parent .container-card .container-busquedas {
+    margin-right: 0;
+    width: 100%;
+   // border: red solid;
+
+    p {
+      margin: 0 !important;
+    }
+  }
+  .container-parent .container-card .btn-grupo {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+  }
+
+  .boxReclutador {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card-busqueda .form-admin {
+    font-size: 15px;
+  }
+
+
+  .container-parent .container-card .flex {
+    flex-direction: row;
+    align-items: center;
+    width: 0%;
+  }
+
+  
+
+  .container-parent .container-card .avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    // border: red solid;
+    width: 110px;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+
+    h6 {
+      padding: 0;
+      font-size: 13px;
+      margin: 0;
+    }
+
+    padding: 0 !important;
+  }
+
+  .skill {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 0px;
+    margin-right: 45px;
+  }
+
+  .container-parent .container-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+   // border: red solid;
+  }
+}
+
+
+
+@media screen and (min-width: 810px) {
+  .container-parent .container-card .container-busquedas {
+    margin-right: 0;
+    width: 100px;
+   // border: red solid;
+    margin-left: 83px;
+  }
+  .container-parent .container-card .btn-grupo {
+    width: 9%;
+    padding-left: 0;
+  }
+
+  .boxReclutador {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .skill {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 0px;
+    margin-left: 127px;
+  }
+
+  .card-busqueda .form-admin {
+    font-size: 15px;
+  }
+
+  .container-parent .container-card .flex {
+    flex-direction: row;
+    align-items: center;
+    width: 0%;
+  }
+
+  .container-parent .container-card .avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+   // border: red solid;
+    width: 150px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    h6 {
+      padding: 0;
+    }
+  }
+
+  .container-parent .container-card {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container-parent {
+    width: 88%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+
+    .container-card {
+      display: flex;
+      width: 88%;
+      justify-content: space-between;
+      padding: 10px;
+
+      .avatar {
+        display: flex;
+        flex-direction: row;
+        width: 190px;
+        padding-left: 20px;
+
+        h6 {
+          padding-left: 20px;
+          width: max-content;
+        }
+      }
+
+      .container-ranking {
+        padding-left: 10%;
+        margin-bottom: 2%;
+      }
+
+      .container-busquedas {
+        margin-right: 5%;
+      }
+
+      /*  .btn-grupo {
+        border: solid red;
+      } */
+
+      .btn-danger {
+        margin-top: 0.7rem;
+        background-color: #ffffff;
+        color: #eb0066d5;
+        border-color: #eb0066d5;
+      }
+
+      .trash-btn {
+        margin-top: 0.7rem;
+        background-color: #ffffff;
+        color: #eb0066d5;
+        border-color: #eb0066d5;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .boxReclutador {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .container-parent {
+    width: 88%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+
+    .container-card {
+      display: flex;
+      width: 88%;
+      justify-content: space-between;
+      padding: 10px;
+
+      .avatar {
+        display: flex;
+        flex-direction: row;
+        width: 200px !important;
+      
+        margin-left: 20px !important;
+
+        img {
+          width: 70px !important;
+          height: 70px !important;
+        }
+
+        h6 {
+          padding-left: 16px;
+          width: max-content;
+        }
+      }
+
+      .container-ranking {
+        padding-left: 10%;
+        margin-bottom: 2%;
+      }
+
+      .container-busquedas {
+        margin-right: 0 !important;
+        margin-left: 40px !important;
+      }
+
+      /*  .btn-grupo {
+        border: solid red;
+      } */
+
+      .btn-danger {
+        margin-top: 0.7rem;
+        background-color: #ffffff;
+        color: #eb0066d5;
+        border-color: #eb0066d5;
+      }
+
+      .trash-btn {
+        margin-top: 0.7rem;
+        background-color: #ffffff;
+        color: #eb0066d5;
+        border-color: #eb0066d5;
+      }
+
+      .btn-grupo {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 23% !important;
+        gap: 10px;
+      }
+    }
+  }
+
+
+  .skill {
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 0px;
+    margin-left: 0px !important;
+    margin-right: 40px !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-parent {
+    width: 88%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+
+    .container-card {
+      display: flex;
+      width: 88%;
+      justify-content: space-between;
+      padding: 10px;
+
+      .avatar {
+        display: flex;
+        flex-direction: row;
+        width: 190px;
+        padding-left: 20px;
+
+        h6 {
+          padding-left: 20px;
+          width: max-content;
+        }
+      }
+
+      .container-ranking {
+        padding-left: 15%;
+        margin-bottom: 2%;
+      }
+
+      .container-busquedas {
+        margin-right: 5%;
+      }
+
+      .btn-danger {
+        margin-top: 0.7rem;
+        background-color: #ffffff;
+        color: #eb0066d5;
+        border-color: #eb0066d5;
+      }
+
+      .trash-btn {
+        margin-top: 0.7rem;
+        background-color: #ffffff;
+        color: #eb0066d5;
+        border-color: #eb0066d5;
+      }
+    }
+  }
+}

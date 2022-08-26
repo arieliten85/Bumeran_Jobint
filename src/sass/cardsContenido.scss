@@ -1,0 +1,85 @@
+.containerBoxContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2em;
+  gap: 2em;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cards {
+  width: 100%;
+  height: 350px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+  border-radius: 12px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__cards {
+  width: 275px;
+}
+
+.cards .cover img {
+  margin-top: 3%;
+  height: 50px;
+}
+
+.container__cards h3 {
+  margin-top: 3%;
+  height: 100px;
+}
+
+.container__cards p {
+  padding: 5px;
+  height: 100px;
+}
+
+.cards__home {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.cards__home h3 {
+  margin-bottom: 2%;
+  font-size: 22px;
+  font-weight: 900;
+
+  height: 70px;
+}
+
+.cards__home h4 {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.row__cards {
+  margin-left: 3%;
+}
+
+.btn-danger-cards {
+  border-radius: 5rem;
+  background-color: #eb0064;
+  color: white;
+  width: 120px;
+}
+
+.text-light {
+  background-color: #eb0064;
+}
+
+.contacto {
+  background: white;
+  padding: 10px;
+  margin-top: 70px !important;
+}

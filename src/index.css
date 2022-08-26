@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Quicksand:wght@300;400&display=swap");
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+body {
+  margin: 0;
+  font-family: "Hind Vadodara", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  margin-bottom: 17.6%;
+
+  background: #edf1f7;;
+
+  margin: 0;
+  margin-bottom:200px;
+}
+html {
+  min-height: 100% !important;
+  position: relative;
+}
+
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box !;
+  list-style: none;
+}

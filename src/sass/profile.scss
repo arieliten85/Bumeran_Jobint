@@ -1,0 +1,623 @@
+.card-container {
+  margin-top: -8%;
+  //border: 2px solid blue;
+}
+.glass-card {
+  //border: 2px solid red;
+  overflow: hidden;
+  display: flex;
+  padding-left: 1%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(0, 12, 240, 0.2),
+    rgb(0, 220, 212, 0.2)
+  );
+  backdrop-filter: blur(200px);
+}
+
+.sidebar {
+  //border: 2px solid rgb(0, 255, 0);
+  background-color: rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding-top: 1%;
+  width: 25%;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 10% 0;
+  text-align: left;
+}
+
+.sidebar ul li {
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  padding: 10% 15%;
+}
+
+.profile-card {
+  color: white;
+  text-align: center;
+}
+.profile-img {
+  width: 40%;
+}
+.profile-card ul li {
+  font-size: 140%;
+}
+
+.main {
+  padding: 2%;
+  width: 95%;
+  min-width: 10%;
+}
+
+.main .header h2 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.main .header span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bolder;
+  display: block;
+}
+
+.search-card {
+  border-radius: 1vmax;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  overflow: hidden;
+  border: solid 1px rgb(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.15);
+}
+
+.search-card .content {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+
+  img {
+    width: 40px !important;
+  }
+}
+
+.search-card .left {
+  padding-right: 15px;
+}
+
+.search-card .right {
+  width: 100%;
+}
+
+.search-card .right .task {
+  font-size: 1.5vmax;
+}
+
+.search-card .buttons {
+  backdrop-filter: blur(5px);
+  text-align: right;
+  padding: 15px;
+}
+
+.botn {
+  background: #eb0064;
+  //background: #0084ff;
+  border: none;
+  font-weight: bolder;
+  color: white;
+  padding: 10px;
+  border-radius: 1vmax;
+}
+
+.botn:hover {
+  box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
+}
+
+.phone {
+  margin-top: 10rem;
+  margin-left: 100%;
+}
+
+.description-card {
+  margin-top: 2%;
+  background: rgba(49, 111, 255, 0.1);
+}
+
+.description-card .card-header {
+  background: rgb(0, 13, 241, 0.8);
+  color: white;
+}
+
+.description-card .card-body {
+  border: rgb(0, 13, 241, 0.2) solid;
+  display: flex;
+}
+
+.description-text {
+  text-align: justify;
+}
+
+// MOBILE
+@media (min-width: 260px) {
+  .container2 {
+    // border: rgb(184, 23, 23) solid;
+
+    background-image: url("../assets/fomrs/descarga3.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .boxCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // estilos ariel//
+
+  .profile-img {
+    // border: red solid;
+    width: 20%;
+  }
+
+  .boxRatingEdit {
+    // border: red solid;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 20px;
+
+    .start {
+      color: rgb(202, 193, 57);
+      font-size: 25px;
+      padding-right: 5px;
+    }
+
+    h5 {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+  .boxAtributos {
+    // border: red solid;
+    li {
+      // border: rgb(60, 255, 0) solid;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 30px;
+      flex-direction: row;
+      width: 100% !important;
+
+      padding: 5px !important;
+      margin: 0 !important;
+
+      p {
+        // border: red solid;
+        color: #0f0f0f;
+        max-width: max-content;
+        font-size: 17px;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: left;
+        width: 300px !important;
+      }
+    }
+
+    .local2 {
+      // border: red solid;
+      color: #000df1;
+      font-size: 25px;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .work2 {
+      //border: red solid;
+      color: #000df1;
+      font-size: 25px;
+    }
+
+    .mail {
+      // border: red solid;
+      color: #000df1;
+      font-size: 25px;
+    }
+  }
+  .header {
+    //  border: solid rgba(46, 56, 233, 0.8);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.14);
+
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    h2 {
+      font-size: 3.5vmax;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    span {
+      font-size: 3vmax;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .card-container {
+    margin-top: -8%;
+  }
+  .sidebar {
+    //border: 2px solid rgb(0, 255, 0);
+    background-color: rgba(0, 0, 0, 0.14);
+    margin: 0;
+    padding-top: 1%;
+    width: 100%;
+  }
+  .search-card {
+    border-radius: 1vmax;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0 20px 0;
+    overflow: hidden;
+    border: solid 1px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.15);
+  }
+  .search-card .right .task {
+    font-size: 2vmax;
+  }
+  .sidebar ul {
+    padding: 0;
+    margin: 0 0;
+    text-align: left;
+  }
+  .sidebar ul li {
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    padding: 1% 25%;
+  }
+  .phone {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+//TABLET
+@media (min-width: 810px) {
+  .container2 {
+    // border: rgb(184, 23, 23) solid;
+    display: flex;
+    background-image: url("../assets/fomrs/descarga3.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  // estilos ariel//
+
+  .boxCard {
+    //border: red solid;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+
+  .profile-img {
+    // border: red solid;
+    width: 40%;
+  }
+
+  .boxRatingEdit {
+    // border: red solid;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 20px;
+
+    .start {
+      color: rgb(202, 193, 57);
+      font-size: 25px;
+      padding-right: 5px;
+    }
+
+    h5 {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+  .boxAtributos {
+    // border: red solid;
+    li {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-direction: column !important;
+      gap: 30px;
+      flex-direction: row;
+      width: 100% !important;
+
+      padding: 5px !important;
+      margin: 0 !important;
+      margin-top: 60px !important ;
+
+      p {
+        // border: red solid;
+        color: #0f0f0f;
+        max-width: max-content;
+        font-size: 17px;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: left;
+        width: 300px !important;
+      }
+    }
+
+    .local2 {
+      // border: red solid;
+      color: #000df1;
+      font-size: 25px;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .work2 {
+      //border: red solid;
+      color: #000df1;
+      font-size: 25px;
+    }
+
+    .mail {
+      // border: red solid;
+      color: #000df1;
+      font-size: 25px;
+    }
+  }
+  .header {
+    //border: solid rgba(46, 56, 233, 0.8);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.14);
+    // width: 95% !important;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+
+    h2 {
+      font-size: 2.5vmax;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    span {
+      font-size: 1.7vmax;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .card-container {
+    //border: 2px solid blue;
+    margin-top: -8%;
+    // margin-bottom: 100%;
+  }
+
+  .sidebar {
+    background-color: rgba(0, 0, 0, 0.14);
+    margin: 0;
+    padding-top: 1%;
+    width: 35%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    // height: 100%;
+  }
+  .search-card {
+    border-radius: 1vmax;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0 20px 0;
+    overflow: hidden;
+    border: solid 1px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.15);
+  }
+  .search-card .right .task {
+    font-size: 1.5vmax;
+  }
+  .sidebar ul {
+    padding: 0;
+    margin: 0 0;
+    text-align: left;
+  }
+  .sidebar ul li {
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    padding: 1% 25%;
+  }
+  .phone {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .main {
+    padding: 2%;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container2 {
+    // border: rgb(184, 23, 23) solid;
+    display: flex;
+    background-image: url("../assets/fomrs/descarga3.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  // estilos ariel//
+
+  .boxCard {
+    // border: red solid;
+    // display: flex !important;
+    // flex-direction: column;
+    // align-items: center !important;
+    // justify-content: left !important;
+    width: 60%;
+  }
+
+  .profile-img {
+    // border: red solid;
+    width: 45%;
+  }
+
+  .boxRatingEdit {
+    // border: red solid;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 20px;
+
+    .start {
+      color: rgb(202, 193, 57);
+      font-size: 25px;
+      padding-right: 5px;
+    }
+
+    h5 {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  }
+  .boxAtributos {
+    // border: red solid;
+    li {
+      // border: rgb(60, 255, 0) solid;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-direction: column !important;
+      gap: 30px;
+      flex-direction: row;
+      width: 100% !important;
+
+      padding: 5px !important;
+      margin: 0 !important;
+      margin-top: 50px !important ;
+
+      p {
+        // border: red solid;
+        color: #0f0f0f;
+        max-width: max-content;
+        font-size: 17px;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: left;
+        width: 300px !important;
+      }
+    }
+
+    .local2 {
+      // border: red solid;
+      color: #000df1;
+      font-size: 25px;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .work2 {
+      //border: red solid;
+      color: #000df1;
+      font-size: 25px;
+    }
+
+    .mail {
+      // border: red solid;
+      color: #000df1;
+      font-size: 25px;
+    }
+  }
+  .header {
+    // border: solid rgba(46, 56, 233, 0.8);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.14);
+    // width: 95% !important;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    width: 77%;
+    h2 {
+      font-size: 2.5vmax;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    span {
+      font-size: 1.7vmax;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .card-container {
+    //border: 2px solid blue;
+    margin-top: -8%;
+    // margin-bottom: 100%;
+  }
+
+  .sidebar {
+    background-color: rgba(0, 0, 0, 0.14);
+    margin: 0;
+    padding-top: 1%;
+    width: 20%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    // height: 100%;
+  }
+  .search-card {
+    border-radius: 1vmax;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0 20px 0;
+    overflow: hidden;
+    border: solid 1px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.15);
+  }
+  .search-card .right .task {
+    font-size: 1.5vmax;
+  }
+  .sidebar ul {
+    padding: 0;
+    margin: 0 0;
+    text-align: left;
+  }
+  // .sidebar ul li {
+  //   color: rgba(255, 255, 255, 1);
+  //   display: block;
+  //   padding: 1% 25%;
+  // }
+  .phone {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .main {
+    padding: 2%;
+
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .glass-card {
+    //border: 2px solid red;
+    overflow: hidden;
+    display: flex;
+    padding-left: 0;
+    background: linear-gradient(
+      to right bottom,
+      rgb(0, 12, 240, 0.2),
+      rgb(0, 220, 212, 0.2)
+    );
+    backdrop-filter: blur(200px);
+  }
+}

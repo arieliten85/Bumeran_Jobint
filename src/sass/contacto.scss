@@ -1,0 +1,254 @@
+.boxContacto {
+  //border: rgb(24, 23, 23) solid;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px !important;
+  
+
+  form {
+    //border: red solid;
+    width: 100%;
+  }
+  .boxImg {
+    display: none;
+
+    //border: rgb(196, 31, 31) solid;
+    width: 30%;
+    img {
+      //border: rgb(196, 31, 31) solid;
+      width: 100%;
+    }
+  }
+
+  h6 {
+    //border: rgb(184, 107, 43) solid 5px;
+    font-size: 20px;
+    margin-top: 10px !important;
+    text-align: center;
+  }
+
+  .box {
+    //border: rgb(184, 107, 43) solid 5px;
+    display: flex;
+    flex-direction: column;
+
+    // gap: 20px;
+
+    input {
+      //  width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      // margin-top: 15px;
+    }
+
+    .box1 {
+      // border: rgb(196, 31, 31) solid;
+      width: 100%;
+    }
+    .box2 {
+      //  border: rgb(41, 196, 10) solid;
+      width: 100%;
+    }
+  }
+
+  .boxButton {
+    //border: rgb(41, 196, 10) solid;
+    text-align: center;
+    margin: 20px;
+
+    button {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      border: none;
+      cursor: pointer;
+      background-color: #fe0068;
+      color: aliceblue;
+      border-radius: 100px 100px 100px 100px;
+      padding: 0px 50px 0px 50px;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+      min-height: 40px;
+      display: inline-block;
+      line-height: 1;
+      font-size: 17px;
+
+      transition: all 0.3s;
+    }
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .boxContacto {
+    //border: rgb(24, 23, 23) solid;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+   
+
+    form {
+      //border: red solid;
+      width: 80%;
+    }
+    .boxImg {
+      display: flex;
+      align-items:flex-start;
+
+      // border: rgb(196, 31, 31) solid;
+      width: 30%;
+      img {
+        //border: rgb(196, 31, 31) solid;
+        width: 100%;
+      }
+    }
+
+    h6 {
+      //border: rgb(184, 107, 43) solid 5px;
+      font-size: 20px;
+      margin-top: 10px !important;
+      text-align: left;
+    }
+
+    .box {
+      // border: rgb(184, 107, 43) solid 5px;
+      display: flex;
+      flex-direction: row;
+
+      gap: 20px;
+
+      input {
+        //  width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        // margin-top: 15px;
+      }
+
+      .box1 {
+        // border: rgb(196, 31, 31) solid;
+        width: 100%;
+      }
+      .box2 {
+        //  border: rgb(41, 196, 10) solid;
+        width: 100%;
+      }
+    }
+
+    .boxButton {
+      //border: rgb(41, 196, 10) solid;
+      text-align: center;
+      margin: 20px;
+
+      button {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        background-color: #fe0068;
+        color: aliceblue;
+        border-radius: 100px 100px 100px 100px;
+        padding: 0px 50px 0px 50px;
+        font-weight: 500;
+        letter-spacing: 1.1px;
+        min-height: 40px;
+        display: inline-block;
+        line-height: 1;
+        font-size: 17px;
+
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .boxContacto {
+    //border: rgb(24, 23, 23) solid;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+
+    form {
+      //border: red solid;
+      width: 60%;
+    }
+    .boxImg {
+      display: block;
+
+       //border: rgb(196, 31, 31) solid;
+      width: 29%;
+      img {
+        //border: rgb(196, 31, 31) solid;
+        width: 100%;
+      }
+    }
+
+    h6 {
+      //border: rgb(184, 107, 43) solid 5px;
+      font-size: 27px;
+      margin-top: 10px !important;
+      text-align: left;
+    }
+
+    .box {
+      // border: rgb(184, 107, 43) solid 5px;
+      display: flex;
+      flex-direction: row;
+
+      gap: 20px;
+
+      input {
+        //  width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        // margin-top: 15px;
+      }
+
+      .box1 {
+        // border: rgb(196, 31, 31) solid;
+        width: 100%;
+      }
+      .box2 {
+        //  border: rgb(41, 196, 10) solid;
+        width: 100%;
+      }
+    }
+
+    .boxButton {
+      //border: rgb(41, 196, 10) solid;
+      text-align: center;
+      margin: 20px;
+
+      button {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        background-color: #fe0068;
+        color: aliceblue;
+        border-radius: 100px 100px 100px 100px;
+        padding: 0px 50px 0px 50px;
+        font-weight: 500;
+        letter-spacing: 1.1px;
+        min-height: 40px;
+        display: inline-block;
+        line-height: 1;
+        font-size: 17px;
+
+        transition: all 0.3s;
+      }
+    }
+  }
+}
